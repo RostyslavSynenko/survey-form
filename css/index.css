@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    background-color: rgba(65, 105, 225, 0.4);
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+#survey-form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px 40px;
+    background-color: white;
+}
+
+#survey-form input[type="text"],
+#survey-form input[type="email"],
+#survey-form input[type="number"] {
+    width: 300px;
+    height: 15px;
+    padding: 5px;
+}
+
+#survey-form input[type="radio"],
+#survey-form input[type="checkbox"] {
+    margin: 8px 0;
+}
+
+#survey-form select {
+    width: 150px;
+    height: 30px;
+}
+
+#survey-form .question {
+    text-align: end;
+    vertical-align: top;
+}
+
+#survey-form textarea {
+    width: 300px;
+    height: 55px;
+}
+
+#survey-form #submit {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    background-color: royalblue;
+    border: none;
+    border-radius: 5px;
+}
