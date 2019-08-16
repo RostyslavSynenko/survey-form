@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form</title>
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <form id="survey-form">
+    <p id="description">Questionnaire about Gamer</p>
+    <table cellspacing="15">
+      <tr>
+        <td class="question">
+          <label id="name-label" for="name">*Name</label>
+        </td>
+        <td>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </td>
+      </tr>
+      <tr>
+        <td class="question">
+          <label id="email-label" for="email">*Email</label>
+        </td>
+        <td>
+          <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+        </td>
+      </tr>
+      <tr>
+        <td class="question">
+          <label id="number-label" for="number">*Age</label>
+        </td>
+        <td>
+          <input type="number" id="number" name="age" placeholder="Age" min="14" max="100" required>
+        </td>
+      </tr>
+      <tr>
+        <td class="question">Sex:</td>
+        <td>
+          <select id="dropdown">
+            <option selected disabled>Choose one</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="question">
+          How many days you play games in one week?
+        </td>
+        <td>
+          <label><input type="radio" name="days" value="1-3days"> 1-3 days</label><br>
+          <label><input type="radio" name="days" value="4-5days"> 4-5 days</label><br>
+          <label><input type="radio" name="days" value="6-7days"> 6-7 days</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="question">
+          Which age have you started playing games?
+        </td>
+        <td>
+          <label><input type="radio" name="years" value="1-10years"> 1-10 years</label><br>
+          <label><input type="radio" name="years" value="11-20years"> 11-20 years</label><br>
+          <label><input type="radio" name="years" value="21-30years"> 21-30 years</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="question">
+          How many hours you spend on a game for one day?
+        </td>
+        <td>
+          <label><input type="radio" name="hours" value="over 12 hrs"> Over 12 hrs</label><br>
+          <label><input type="radio" name="hours" value="~8 hrs"> ~8 hrs</label><br>
+          <label><input type="radio" name="hours" value="~6 hrs"> ~6 hrs</label><br>
+          <label><input type="radio" name="hours" value="~2 hrs less"> ~6 hrs</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="question">
+          What type of game is your faourite?
+        </td>
+        <td>
+          <label><input type="checkbox" name="type" value="shooting"> Shooting game</label><br>
+          <label><input type="checkbox" name="type" value="action"> Action game</label><br>
+          <label><input type="checkbox" name="type" value="racing"></label> Racing game<br>
+          <label><input type="checkbox" name="type" value="board"> Board game</label><br>
+          <label><input type="checkbox" name="type" value="sport"> Sport game</label><br>
+          <label><input type="checkbox" name="type" value="puzzle"> Puzzle game</label><br>
+          <label><input type="checkbox" name="type" value="role-playing"> Role-playing game</label><br>
+        </td>
+      </tr>
+      <tr>
+        <td class="question">
+          You usually playing online or offline game?
+        </td>
+        <td>
+          <select >
+            <option selected disabled>Choose one</option>
+            <option value="online">Online game</option>
+            <option value="offline">Offline game</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="question">
+          Any Comments or Suggestions?
+        </td>
+        <td>
+          <textarea placeholder="Enter your comment here"></textarea>
+        </td>
+      </tr>
+    </table>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body> 
+</html>
